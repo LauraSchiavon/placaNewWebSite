@@ -1,5 +1,12 @@
-import React from 'react';
-import { Facebook, Instagram, Twitter, Mail, PhoneCall, MapPin } from 'lucide-react';
+import React from "react";
+import {
+  Facebook,
+  Instagram,
+  Twitter,
+  Mail,
+  PhoneCall,
+  MapPin,
+} from "lucide-react";
 
 const Footer = () => {
   return (
@@ -8,24 +15,28 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center mb-4">
-              <img 
-                src="/logo.png" 
-                alt="Placa New Logo" 
-                className="h-12 w-auto"
+              <img
+                src="./image/logoBranco.jpg"
+                alt="Placa New Logo"
+                className="h-12 w-auto rounded-md"
               />
             </div>
             <p className="text-gray-300 mb-4">
-              Soluções completas em emplacamento veicular, com qualidade e agilidade para sua tranquilidade.
+              Soluções completas em emplacamento veicular, com qualidade e
+              agilidade para sua tranquilidade.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
+              <a
+                href="https://www.facebook.com/profile.php?id=100064824678674"
+                className="text-gray-300 hover:text-white transition-colors"
+              >
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
+              <a
+                href="https://www.instagram.com/placanewpiracicaba/"
+                className="text-gray-300 hover:text-white transition-colors"
+              >
                 <Instagram className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                <Twitter className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -34,16 +45,36 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Links Rápidos</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#home" className="text-gray-300 hover:text-white transition-colors">Início</a>
+                <a
+                  href="#home"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Início
+                </a>
               </li>
               <li>
-                <a href="#about" className="text-gray-300 hover:text-white transition-colors">Sobre Nós</a>
+                <a
+                  href="#about"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Sobre Nós
+                </a>
               </li>
               <li>
-                <a href="#services" className="text-gray-300 hover:text-white transition-colors">Serviços</a>
+                <a
+                  href="#services"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Serviços
+                </a>
               </li>
               <li>
-                <a href="#location" className="text-gray-300 hover:text-white transition-colors">Localização</a>
+                <a
+                  href="#location"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Localização
+                </a>
               </li>
             </ul>
           </div>
@@ -55,8 +86,7 @@ const Footer = () => {
               <li className="text-gray-300">Emplacamento de Caminhões</li>
               <li className="text-gray-300">Emplacamento de Motos</li>
               <li className="text-gray-300">Emplacamento Comercial</li>
-              <li className="text-gray-300">Regularização</li>
-              <li className="text-gray-300">Consultoria</li>
+              <li className="text-gray-300">Entrega de Placas</li>
             </ul>
           </div>
 
@@ -69,11 +99,13 @@ const Footer = () => {
               </li>
               <li className="flex items-start">
                 <PhoneCall className="h-5 w-5 text-white mr-2 mt-1 flex-shrink-0" />
-                <span className="text-gray-300">(19) 99999-8888</span>
+                <span className="text-gray-300">(19) 98221-2948</span>
               </li>
               <li className="flex items-start">
                 <Mail className="h-5 w-5 text-white mr-2 mt-1 flex-shrink-0" />
-                <span className="text-gray-300">contato@placanew.com.br</span>
+                <span className="text-gray-300">
+                  piracicaba@placanew.com.br
+                </span>
               </li>
             </ul>
           </div>
@@ -82,7 +114,10 @@ const Footer = () => {
 
       <div className="border-t border-blue-800 py-4">
         <div className="container mx-auto px-4 md:px-6 text-center text-gray-300">
-          <p>&copy; {new Date().getFullYear()} Placa New. Todos os direitos reservados.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Placa New. Todos os direitos
+            reservados. Site criado pela Sansch Agência.
+          </p>
         </div>
       </div>
     </footer>
