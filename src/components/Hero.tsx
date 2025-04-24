@@ -33,7 +33,7 @@ const Hero = () => {
 
           <div className="order-1 md:order-2 flex justify-center">
             <img
-              src="./image/hero.png"
+              src="/image/hero.png"
               alt="Placa New Logo"
               className="w-[400px] md:w-[700px] animate-fade-in rounded-lg"
             />

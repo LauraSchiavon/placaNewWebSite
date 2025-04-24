@@ -1,12 +1,4 @@
-import React from "react";
-import {
-  Facebook,
-  Instagram,
-  Twitter,
-  Mail,
-  PhoneCall,
-  MapPin,
-} from "lucide-react";
+import { Facebook, Instagram, Mail, PhoneCall, MapPin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -16,7 +8,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center mb-4">
               <img
-                src="./image/logoBranco.jpg"
+                src="/image/logoBranco.jpg"
                 alt="Placa New Logo"
                 className="h-12 w-auto rounded-md"
               />

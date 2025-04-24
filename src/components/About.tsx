@@ -69,7 +69,7 @@ const About = () => {
 
           <div className="rounded-xl overflow-hidden shadow-xl transform transition-all hover:scale-105">
             <img
-              src="./image/local.jpeg"
+              src="/image/local.jpeg"
               alt="Foto do local de atendimento"
               className="w-full h-[400px] object-cover"
             />
