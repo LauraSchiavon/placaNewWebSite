@@ -18,7 +18,6 @@ const Header = () => {
     { label: "Sobre Nós", href: "about" },
     { label: "Serviços", href: "services" },
     { label: "Localização", href: "location" },
-    { label: "Contato", href: "contact" },
   ];
 
   return (
@@ -44,12 +43,12 @@ const Header = () => {
                 {item.label}
               </a>
             ))}
-            {/* <a
-              href="#contato"
+            <a
+              href="#contact"
               className="ml-4 px-6 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-800 transition-colors duration-200"
             >
               Solicitar Orçamento
-            </a> */}
+            </a>
           </nav>
 
           {/* Botão Mobile */}
