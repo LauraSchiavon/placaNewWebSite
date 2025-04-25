@@ -7,18 +7,19 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 10);
     };
-
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const links = [
+    { label: "Início", href: "home" },
+    { label: "Sobre Nós", href: "about" },
+    { label: "Serviços", href: "services" },
+    { label: "Localização", href: "location" },
+    { label: "Contato", href: "location" },
+  ];
 
   return (
     <header
@@ -29,39 +30,33 @@ const Header = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
-            <img
-              src="/image/logo.png"
-              alt="Placa New Logo"
-              className="h-16 w-auto"
-            />
+            <img src="/image/logo.png" alt="Logo" className="h-16 w-auto" />
           </div>
 
-          {/* Desktop Navigation */}
+          {/* Navegação Desktop */}
           <nav className="hidden md:flex items-center space-x-1">
-            {["Início", "Sobre Nós", "Serviços", "Localização", "Contato"].map(
-              (item, index) => (
-                <a
-                  key={index}
-                  href={`#${item.toLowerCase().replace(/\s+/g, "")}`}
-                  className="px-4 py-2 text-blue-900 font-medium hover:bg-blue-50 rounded-lg transition-colors duration-200"
-                >
-                  {item}
-                </a>
-              )
-            )}
-            <a
-              href="#contact"
+            {links.map((item, index) => (
+              <a
+                key={index}
+                href={`#${item.href}`}
+                className="px-4 py-2 text-blue-900 font-medium hover:bg-blue-50 rounded-lg transition-colors duration-200"
+              >
+                {item.label}
+              </a>
+            ))}
+            {/* <a
+              href="#contato"
               className="ml-4 px-6 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-800 transition-colors duration-200"
             >
               Solicitar Orçamento
-            </a>
+            </a> */}
           </nav>
 
-          {/* Mobile Menu Button */}
+          {/* Botão Mobile */}
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-lg text-blue-900 hover:bg-blue-50 focus:outline-none"
+              className="p-2 rounded-lg text-blue-900 hover:bg-blue-50"
             >
               {isOpen ? (
                 <X className="h-6 w-6" />
@@ -73,29 +68,27 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation */}
+      {/* Menu Mobile */}
       {isOpen && (
         <div className="md:hidden bg-white border-t">
           <div className="container mx-auto px-4 py-4 space-y-3">
-            {["Início", "Sobre Nós", "Serviços", "Localização", "Contato"].map(
-              (item, index) => (
-                <a
-                  key={index}
-                  href={`#${item.toLowerCase().replace(/\s+/g, "")}`}
-                  className="block px-4 py-2 text-blue-900 hover:bg-blue-50 rounded-lg transition-colors duration-200"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item}
-                </a>
-              )
-            )}
-            <a
-              href="#contact"
+            {links.map((item, index) => (
+              <a
+                key={index}
+                href={`#${item.href}`}
+                className="block px-4 py-2 text-blue-900 hover:bg-blue-50 rounded-lg transition-colors duration-200"
+                onClick={() => setIsOpen(false)}
+              >
+                {item.label}
+              </a>
+            ))}
+            {/* <a
+              href="location"
               className="block px-4 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-800 transition-colors duration-200"
               onClick={() => setIsOpen(false)}
             >
               Solicitar Orçamento
-            </a>
+            </a> */}
           </div>
         </div>
       )}
