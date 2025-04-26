@@ -20,6 +20,16 @@ const Header = () => {
     { label: "Localização", href: "location" },
   ];
 
+  const handleWhatsAppRedirect = () => {
+    const phoneNumber = "551982212948";
+    const message =
+      "Olá! Gostaria de saber mais sobre os serviços de emplacamento.";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(whatsappUrl, "_blank");
+  };
+
   return (
     <header
       className={`sticky top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -43,12 +53,12 @@ const Header = () => {
                 {item.label}
               </a>
             ))}
-            <a
-              href="#contact"
+            <button
+              onClick={handleWhatsAppRedirect}
               className="ml-4 px-6 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-800 transition-colors duration-200"
             >
               Solicitar Orçamento
-            </a>
+            </button>
           </nav>
 
           {/* Botão Mobile */}
@@ -81,13 +91,15 @@ const Header = () => {
                 {item.label}
               </a>
             ))}
-            {/* <a
-              href="location"
-              className="block px-4 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-800 transition-colors duration-200"
-              onClick={() => setIsOpen(false)}
+            <button
+              onClick={() => {
+                setIsOpen(false);
+                handleWhatsAppRedirect();
+              }}
+              className="block w-full px-4 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-800 transition-colors duration-200"
             >
               Solicitar Orçamento
-            </a> */}
+            </button>
           </div>
         </div>
       )}
