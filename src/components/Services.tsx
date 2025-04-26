@@ -96,7 +96,7 @@ const Services = () => {
             Precisa de um serviço personalizado? Entre em contato conosco!
           </p>
           <a
-            href="https://api.whatsapp.com/send?phone=SEU_NUMERO_AQUI&text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento."
+            href="https://api.whatsapp.com/send?phone=551982212948&text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-blue-900 hover:bg-blue-800 text-white px-8 py-3 rounded-lg font-medium transition-all duration-200 transform hover:scale-105"
