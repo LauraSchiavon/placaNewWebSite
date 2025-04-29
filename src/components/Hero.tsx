@@ -1,9 +1,6 @@
 const Hero = () => {
   return (
-    <section
-      id="home"
-      className="relative min-h-screen bg-blue-900 text-white "
-    >
+    <section id="home" className="relative min-h-screen bg-blue-900 text-white">
       <div className="absolute inset-0 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900/95"></div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-10 h-screen flex flex-col justify-center">
@@ -24,7 +21,9 @@ const Hero = () => {
                 Nossos Serviços
               </a>
               <a
-                href="#contact"
+                href="https://api.whatsapp.com/send?phone=551982212948&text=Olá!%20Gostaria%20de%20entrar%20em%20contato."
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-transparent border-2 border-white hover:bg-white hover:text-blue-900 text-white px-8 py-3 rounded-lg font-medium transition-all transform hover:scale-105 text-center"
               >
                 Entre em Contato
@@ -41,13 +40,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      {/* 
-      <div className="absolute bottom-8 left-0 right-0 text-center animate-bounce">
-        <a href="#about" className="inline-block text-white">
-          <span className="sr-only">Rolar para baixo</span>
-          <ChevronDown className="h-8 w-8" />
-        </a>
-      </div> */}
     </section>
   );
 };

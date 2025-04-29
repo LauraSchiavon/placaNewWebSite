@@ -87,17 +87,34 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-white mr-2 mt-1 flex-shrink-0" />
-                <span className="text-gray-300">Piracicaba - SP</span>
+                <a
+                  href="https://www.google.com/maps?q=Av.+Antonia+Pazinatto+Sturion,+562,+Piracicaba,+SP"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300"
+                >
+                  Piracicaba - SP
+                </a>
               </li>
               <li className="flex items-start">
                 <PhoneCall className="h-5 w-5 text-white mr-2 mt-1 flex-shrink-0" />
-                <span className="text-gray-300">(19) 98221-2948</span>
+                <a
+                  href="https://wa.me/5519982212948?text=Olá!%20Gostaria%20de%20entrar%20em%20contato."
+                  className="text-gray-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  (19) 98221-2948
+                </a>
               </li>
               <li className="flex items-start">
                 <Mail className="h-5 w-5 text-white mr-2 mt-1 flex-shrink-0" />
-                <span className="text-gray-300">
+                <a
+                  href="mailto:piracicaba@placanew.com.br"
+                  className="text-gray-300"
+                >
                   piracicaba@placanew.com.br
-                </span>
+                </a>
               </li>
             </ul>
           </div>
