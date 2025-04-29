@@ -29,6 +29,7 @@ const LocationInfo = () => {
           </div>
 
           <div className="space-y-8">
+            {/* Endereço */}
             <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <div className="flex items-start">
                 <div className="bg-blue-100 p-3 rounded-full mr-4">
@@ -38,15 +39,21 @@ const LocationInfo = () => {
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">
                     Endereço
                   </h3>
-                  <p className="text-gray-700">
+                  <a
+                    href="https://www.google.com/maps?q=Av.+Antonia+Pazinatto+Sturion,+562,+Piracicaba,+SP"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-700 hover:underline block"
+                  >
                     Av. Antonia Pazinatto Sturion, 562
-                  </p>
+                  </a>
                   <p className="text-gray-700">Morumbi, Piracicaba - SP</p>
                   <p className="text-gray-700">CEP: 13420-640</p>
                 </div>
               </div>
             </div>
 
+            {/* Horário */}
             <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <div className="flex items-start">
                 <div className="bg-blue-100 p-3 rounded-full mr-4">
@@ -63,6 +70,7 @@ const LocationInfo = () => {
               </div>
             </div>
 
+            {/* Contato */}
             <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <div className="flex items-start">
                 <div className="bg-blue-100 p-3 rounded-full mr-4">
@@ -72,10 +80,20 @@ const LocationInfo = () => {
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">
                     Contato
                   </h3>
-                  <p className="text-gray-700">WhatsApp: (19) 98221-2948</p>
-                  <p className="text-gray-700">
+                  <a
+                    href="https://wa.me/5519982212948"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-700 hover:underline block"
+                  >
+                    WhatsApp: (19) 98221-2948
+                  </a>
+                  <a
+                    href="mailto:piracicaba@placanew.com"
+                    className="text-gray-700 hover:underline block"
+                  >
                     Email: piracicaba@placanew.com
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>

@@ -26,7 +26,7 @@ const Footer = () => {
               </a>
               <a
                 href="https://www.instagram.com/placanewpiracicaba/"
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-gray-300 hover:text-pink-900 transition-colors"
               >
                 <Instagram className="h-5 w-5" />
               </a>

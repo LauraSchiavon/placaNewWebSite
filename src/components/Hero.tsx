@@ -1,5 +1,3 @@
-import { ChevronDown } from "lucide-react";
-
 const Hero = () => {
   return (
     <section
