@@ -15,7 +15,7 @@ function App() {
       <Services />
       <LocationInfo />
       <Footer />
-      <WhatsAppButton />
+      {/* <WhatsAppButton /> */}
     </div>
   );
 }
